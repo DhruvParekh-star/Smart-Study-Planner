@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Smart Study Planner</h1>
+        <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <section id="reminder-section" class="reminders"></section>
+
+        <section class="task-input-section">
+            <h2>Add a New Study Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="e.g., Read Chapter 5" required>
+                <input type="datetime-local" id="task-due-datetime" required>
+                <select id="task-priority" required>
+                    <option value="low">Low Priority</option>
+                    <option value="medium" selected>Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        
+        <section class="task-controls">
+            <div class="progress-container">
+                <h3>Progress</h3>
+                <div class="progress-bar-background">
+                    <div id="progress-bar" class="progress-bar-foreground"></div>
+                </div>
+                <span id="progress-text">0%</span>
+            </div>
+            <div id="filter-buttons" class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+        </section>
+
+        <section class="task-display-section">
+            <h2>Your Timeline</h2>
+            <div id="task-list">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
