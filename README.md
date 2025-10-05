@@ -1,4 +1,3 @@
----
 # 📚 Smart Study Planner
 
 A **client-side**, **browser-based** web application designed to help students **organize their study schedules**, **track academic tasks**, and **manage time effectively**.
@@ -111,5 +110,3 @@ A clean and minimal directory layout for easy navigation:
 
 This project is licensed under the **MIT License**.
 See the [`LICENSE`](./LICENSE) file for full details.
-
----
